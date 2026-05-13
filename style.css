@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #dff6ff, #f7fbff);
+    color: #1e3a5f;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #0f4c81, #3fa7d6);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #0f4c81;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff8c42;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.card {
+    background: white;
+    margin: 40px auto;
+    width: 90%;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #0f4c81;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.content-grid img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.big-image {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.characters {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.character-box {
+    flex: 1;
+    background: #e8f7ff;
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 220px;
+}
+
+.character-box h3 {
+    color: #0f4c81;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    background: #0f4c81;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media(max-width: 768px) {
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .hero-text {
+        position: static;
+        margin: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+  }
